@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* CSS para visualizar no PC */
+#container{
+    display: block;
+    padding: 0;
+    margin: 100px;
+
+}
+#cabecalho{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+#nome{
+    text-transform: full-width;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    height: 80px
+}
+#info{
+    text-align: left;
+    height: 40px;
+}
+.titulo{
+    font-size: 20px;
+    color: cornflowerblue;
+    height: 10px;
+}
+#objetivo{
+    max-height: 100px;
+}
+.experiencia-subtitulo{
+    font-style: italic;
+    height: 5px;
+}
+.experiencia-data{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#conteudo-central{
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    align-content: flex-start;
+}
+#conteudo-lateral{
+    max-width: 250px;
+    word-break: keep-all;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    height: 10px;
+}
+#contato{
+    font-size: 18px;
+    height: 250px;
+}
+.competencia-1{
+    text-indent: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    height: 10px;
+}
+.competencia-2{
+    text-indent: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#corpo{
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    align-content: flex-start;
+}
+#experiencia{
+    max-height: 350px;
+}
+.descricao{
+    padding: 0;
+    border: 0;
+    max-width: 40%;
+    height: 150px;
+}
+.ensino-medio{
+    height: 5px;
+}
+.ensino-data{
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 1px;
+}
+.ensino-fundamental{
+    height: 5px;
+}
+.ensino-data-2{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* CSS para visualizar no celular */
+@media only screen and (max-width: 600px) {
+    #container{
+        text-ident: 50px;
+        display: block;
+        padding: 0;
+        margin: 100px;
+
+    }
+    #cabecalho{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+    #nome{
+        text-transform: full-width;
+        text-align: left;
+        color: black;
+        font-size: 8px;
+        height: 80px
+    }
+    #info{
+        text-align: left;
+        height: 40px;
+    }
+    .titulo{
+        font-size: 11px;
+        color: cornflowerblue;
+        height: 10px;
+    }
+    #objetivo{
+        max-height: 100px;
+    }
+    .experiencia-subtitulo{
+        font-style: italic;
+        height: 5px;
+    }
+    .experiencia-data{
+        text-transform: uppercase;
+        font-size: 9px;
+    }
+    #conteudo-central{
+        padding: 0;
+        margin: 0;
+        justify-content: left;
+        align-content: flex-start;
+    }
+    #conteudo-lateral{
+        max-width: 250px;
+        word-break: keep-all;
+        padding: 0;
+        margin: 0;
+        font-size: 11px;
+        height: 10px;
+    }
+    #contato{
+        font-size: 11px;
+        height: 250px;
+    }
+    .competencia-1{
+        font-size: 11px;
+        height: 10px;
+    }
+    .competencia-2{
+        font-size: 11px;
+    }
+    #corpo{
+        padding: 0;
+        margin: 0;
+        justify-content: left;
+        align-content: flex-start;
+    }
+    #experiencia{
+        max-height: 350px;
+    }
+    .descricao{
+        padding: 0;
+        border: 0;
+        max-width: 40%;
+        height: 150px;
+    }
+    .ensino-medio{
+        height: 5px;
+    }
+    .ensino-data{
+        text-transform: uppercase;
+        font-size: 8px;
+        height: 1px;
+    }
+    .ensino-fundamental{
+        height: 8px;
+    }
+    .ensino-data-2{
+        text-transform: uppercase;
+        font-size: 8px;
+    }
+}
+
+
+
+/*Fonts*/
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}

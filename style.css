@@ -2,72 +2,105 @@
 
 /* CSS para visualizar no PC */
 #container{
+    text-ident: 5px;
     display: block;
     padding: 0;
-    margin: 100px;
-
+    margin: 10px;
 }
 #cabecalho{
     display: flex;
     padding: 0;
     margin: 0;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 #nome{
     text-transform: full-width;
     text-align: left;
     color: black;
-    font-size: 20px;
-    height: 80px
+    font-size: 130%;
+    height: 90px;
 }
 #info{
+    font-size: 80%;
     text-align: left;
     height: 40px;
 }
 .titulo{
-    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 130%;
     color: cornflowerblue;
-    height: 10px;
+    height: 10%;
 }
 #objetivo{
-    max-height: 100px;
+    padding-top: 2%;
+}
+.descricao-objetivo{
+    font-size: 118%;
+    margin-bottom: 0;
+}
+#experiencia{
+    font-size: 100%;
+    margin: 0;
 }
 .experiencia-subtitulo{
+    font-size: 110%;
     font-style: italic;
-    height: 5px;
+    height: 50%;
+    margin: 1% 0 0;
 }
 .experiencia-data{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 10px;
+    padding-top: 2%;
+}
+.descricao-experiencia{
+    padding: 1% 0 2%;
+    margin: 0;
+    width: fit-content;
+    container-type: inline-size;
 }
 #conteudo-central{
     padding: 0;
     margin: 0;
+    height: 0;
+    width: 100%;
     justify-content: left;
     align-content: flex-start;
 }
 #conteudo-lateral{
-    max-width: 250px;
-    word-break: keep-all;
-    padding: 0;
+    padding-top: 1%;
     margin: 0;
-    font-size: 15px;
-    height: 10px;
+    height: 10%;
+    width: 60%;
+}
+.endereço{
+    display: block;
+    padding: 0;
+    font-size: 118%;
 }
 #contato{
-    font-size: 18px;
-    height: 250px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: 90%;
+    height: 120px;
 }
-.competencia-1{
-    text-indent: 10px;
-    text-transform: uppercase;
-    font-size: 15px;
-    height: 10px;
+#competencias{
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    padding: 2% 0 0;
 }
-.competencia-2{
-    text-indent: 10px;
-    text-transform: uppercase;
-    font-size: 15px;
+.competencia{
+    margin: 1% 0 0;
+    font-size: 118%;
 }
 #corpo{
     padding: 0;
@@ -79,27 +112,40 @@
     max-height: 350px;
 }
 .descricao{
-    padding: 0;
-    border: 0;
-    max-width: 40%;
-    height: 150px;
+    overflow-wrap: break-word;
+    font-size: 118%;
+    width: 50%;
+    height: auto;
+    text-justify: inter-word;
 }
-.ensino-medio{
-    height: 5px;
+.local{
+    font-size: 110%;
+    height: 1%;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
 }
-.ensino-data{
+.data{
+    margin: 0;
     text-transform: uppercase;
-    font-size: 14px;
-    height: 1px;
+    font-size: 90%;
+    height: 100%;
 }
-.ensino-fundamental{
-    height: 5px;
+#redes-sociais{
+    display: flex;
+    width: 45%;
+    height: 40%;
+    padding: 3% 0 0;
 }
-.ensino-data-2{
-    text-transform: uppercase;
-    font-size: 14px;
+.whatsapp{
+    width: 50%;
 }
-
+.gmail{
+    width: 50%;
+}
+.linkedin{
+    width: 50%;
+}
 /* CSS para visualizar no celular */
 @media only screen and (max-width: 500px) {
     #container{
@@ -131,32 +177,23 @@
     .titulo{
         font-size: 13px;
         color: cornflowerblue;
-        height: 10px;
     }
-    #objetivo{
-        font-size: 14px;
-        max-height: 100px;
+    .local{
+        font-size: 80%;
+        margin: 0;
+        padding: 1% 0 0.5%;
     }
-    .descricao-objetivo{
-        font-size: 10px;
-    }
-    .experiencia-subtitulo{
-        font-size: 11px;
-        font-style: italic;
-        height: 5px;
-    }
-    .experiencia-data{
+    .data{
         text-transform: uppercase;
         font-size: 10px;
     }
     .descricao{
-        font-size: 10px;
-        padding: 10px;
+        padding: 0 0 5%;
+        margin: 0;
+        font-size: 85%;
         width: fit-content;
-        container-type: inline-size;
-    }
-    .descricao > p {
-        font-size: 19cqi;
+        text-align: justify;
+        text-justify: inter-word;
     }
     #conteudo-central{
         padding: 0;
@@ -203,11 +240,7 @@
         height: 100%;
         padding: 5% 0 0;
     }
-    .competencia-1{
-        font-size: 11px;
-        height: 10px;
-    }
-    .competencia-2{
+    .competencia{
         font-size: 11px;
     }
     #corpo{
@@ -219,31 +252,6 @@
     #experiencia{
         max-height: 350px;
     }
-    .descricao-experiencia{
-        overflow-wrap: break-word;
-        font-size: 11px;
-        width: 250px;
-        height: 170px;
-    }
-    .ensino-medio{
-        font-size: 11px;
-        height: 5px;
-    }
-    .ensino-data{
-        text-transform: uppercase;
-        font-size: 10px;
-        height: 1px;
-    }
-    .ensino-fundamental{
-        font-size: 11px;
-        height: 8px;
-    }
-    .ensino-data-2{
-        text-transform: uppercase;
-        font-size: 10px;
-        padding-top: 2%;
-    }
-
     #redes-sociais{
         display: flex;
         width: 100%;
